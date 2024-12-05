@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #cce5ff, #99ccff);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #003366;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5em;
+    color: #003366;
+}
+
+.balance-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.credit-card-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    background-color: white;
+    color: #003366;
+}
+
+
+
+.tabs-section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tabs-section ul li {
+    margin: 10px;
+    flex: 1;
+}
+
+.tabs-section ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    padding: 10px;
+    font-size: 0.9em;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.tabs-section ul li a:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tabs-section ul li a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for clicked tab */
+@keyframes tabClick {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.tabs-section ul li a.active {
+    background-color: #0056b3;
+    animation: tabClick 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .tabs-section ul {
+        flex-wrap: wrap;
+    }
+    
+    .tabs-section ul li {
+        flex-basis: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 400px) {
+    .tabs-section ul li {
+        flex-basis: calc(50% - 20px);
+    }
+}

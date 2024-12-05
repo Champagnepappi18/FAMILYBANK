@@ -1,0 +1,56 @@
+.side-bar__container {
+   
+    width: 250px;
+    background-color: #3f3e3e;
+    left: 0;
+    height: calc( 100vh - 70px );
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    width: 250px;
+    background-color: darkblue;
+    color: darkblue;
+    padding: 10px;
+    padding-top: 30px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  .sidebar .menu-item a {
+    text-decoration: none;
+    color: darkblue;
+  }
+  .menu-title {
+    cursor: pointer;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-title:hover {
+    background-color: #555;
+  }
+  
+  .submenu {
+    margin-top: 5px;
+    padding-left: 15px;
+  }
+  
+  .submenu-item {
+    padding: 5px 10px;
+    background-color: lightblue;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submenu-item:hover {
+    background-color: rgb(162, 214, 231);
+  }

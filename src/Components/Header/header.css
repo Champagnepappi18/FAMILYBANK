@@ -1,0 +1,54 @@
+.header-container {
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #007bff0f;
+    box-shadow: 0px 1px 2px 2px rgb(238, 234, 234);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container .logo {
+    font-size: 30px;
+    padding-left: 20px;
+    width: 250px;
+    background: lightblue;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: darkblue;
+}
+.header-container .logo a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.header-container .full-width--span {
+    flex: 1
+}
+
+.header-container .user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.header-container .user-info .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightblue;
+    color: darkblue;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-container .user-info .log-out {
+    margin-left: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
